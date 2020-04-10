@@ -1,0 +1,30 @@
+<mat-toolbar  color="primary" class="nav">
+  <mat-toolbar-row>
+    <span>Reactive Playground</span>
+    <span class="example-spacer"></span>
+    <div>
+      <a href="https://www.linkedin.com/in/manjesh-km" style="background: #cccccc;margin-right: 10px; font-size: 50px; text-decoration: none; border-radius: 20px">
+        <i class="icon-linkedin-sign"></i>
+      </a>
+      <a href="https://github.com/manjeshkm" style="background: #cccccc; font-size: 50px; text-decoration: none; border-radius: 20px">
+        <i class="icon-github"></i>
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+  <mat-card class="exCard">
+    <div>
+      <div class="cmpnt" #tar [style.height.px]="height1" [style.color]="validate1()" disabled="true">{{height1}}</div>
+    </div>
+    <div>
+      <div class="cmpnt" #tar2 [style.height.px]="height2" [style.color]="validate2()">{{height2}}</div>
+    </div>
+    <div class="score">Points: {{points}}</div>
+  </mat-card>
+  <mat-icon class="icon" (click)="openDialog()">help_outline</mat-icon>
+  <button mat-raised-button color="primary" (click)="reset()" [disabled]="disableReset">Reset</button>
+</div>
+
+
+
