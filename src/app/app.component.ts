@@ -38,7 +38,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.mediaObserver.observe([Breakpoints.Handset, Breakpoints.Tablet]).subscribe(result => {
       if (result.matches) {
         this.isHandset = true;
-        this.throttleSpeed = 10;
+        this.throttleSpeed = 15;
         console.log(this.throttleSpeed + ': handSet: ' + this.isHandset);
       }
     });
@@ -142,13 +142,13 @@ export class AppComponent implements AfterViewInit, OnInit {
   openDialog() {
     const webinstructions = 'You can see two blocks are displayed with initial VALUE 50 in red(indicating not in range), ' +
       'you can increase the value of blocks by mouseover on the block and decrease the value by mouseout of the block. ' +
-      'Now balance the value of both blocks simultaneously in such a way that the value in both the blocks is in the ' +
+      'Now balance the value of both blocks in such a way that the value in both the blocks is in the ' +
       'range 100 > VALUE < 300, if the value in any of the blocks is not in the given range the game automatically quits, ' +
       'a point is rewarded for each cross balancing between the blocks only. Start the game by mouseover on any of the block. ' +
       'GOOD LUCK:)';
     const mobileinstructions = 'You can see two blocks are displayed with initial VALUE 50 in red(indicating not in range), ' +
-      'you can increase the value of blocks by tapping on the block and decrease the value by tapping out of the block. ' +
-      'Now balance the value of both blocks simultaneously in such a way that the value in both the blocks is in the ' +
+      'you can increase the value of blocks by tapping on the block and decrease the value by tapping on the opposite block. ' +
+      'Now balance the value of both blocks in such a way that the value in both the blocks is in the ' +
       'range 100 > VALUE < 200, if the value in any of the blocks is not in the given range the game automatically quits, ' +
       'a point is rewarded for each cross balancing between the blocks only. Start the game by tapping on any of the block. ' +
       'GOOD LUCK:)';

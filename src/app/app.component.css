@@ -66,10 +66,10 @@
 
 @media screen and (max-width: 599px) {
   .container {
-    margin-left: 80px;
+    margin-left: 135px;
   }
 
   .nav {
-    min-width: 127vw;
+    min-width: 145vw;
   }
 }
