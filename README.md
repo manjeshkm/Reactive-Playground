@@ -1,5 +1,5 @@
 # ReactivePlayGround
-a simple yet challenging game created to play around Reactive programming using RXJS lib
+a simple yet challenging game created to play around Reactive programming using RXJS lib.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6. 
 
 #Live
